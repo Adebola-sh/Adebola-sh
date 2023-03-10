@@ -1,0 +1,127 @@
+body{
+    background-color: #040d16;
+    margin: auto;
+    width: 1000px;
+    padding-top: 30px;
+
+}
+
+#meta, .field{
+
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:100;
+    border-radius: 7px;
+}
+.body{
+    --darkshadow-color:#010f1d ;
+    color: white;
+    
+    background-color: var(--darkshadow-color);
+    padding: 20px;
+    margin: auto;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    border-radius: 15px;
+    flex: 1;
+}
+.fieldwrap{
+    width: 120vh;
+
+}
+.field{
+    height: 35px;
+}
+/* .formfields{
+    position: relative;
+    margin: auto;
+    width: 320px;
+} */
+#helptext{
+    font-size:12px;
+    width: 300px;
+    font-family:Geneva, sans-serif;
+    }
+.header_div{
+    width: 430px;
+    margin: 0;
+    padding: 0;
+}
+.img_container{
+    width: 420px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+
+}
+img{
+    width: 470px;
+    position: relative;
+    /* margin: auto; */
+    margin-left: -20px;
+    margin-top: -20px;
+    padding: 0;
+    border-radius: 14px;
+     
+ }
+
+.btn_div{
+    position: relative;
+    
+    width: 180px;
+}
+.checks{
+    width: 18px;
+    color: rgb(128, 87, 10);
+    border-color: #e6ecf0;
+}
+
+#submit_btn{
+    background-color: rgb(56, 42, 13);
+    position:relative;
+    color: #e6ecf0;
+    border-radius: 15px;
+    border-color: #e6ecf0;
+    box-shadow: 1px 1px 7px var(--darkshadow);
+    width: 130px;
+    height: 35px;
+    
+}
+
+#submit_btn:hover{
+    background-color:var(--darkshadow);
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+    transition: color 100ms ease-out;
+}
+#submit_btn:active{
+    color: rgb(15, 25, 43);
+    background-color: rgb(255, 255, 255);
+}
+
+/* @media screen and (max-width:450px){
+   
+    img{
+        height: 100px;
+        width: 400px;
+    }
+    .field{
+        height: 18px;
+        width: 150px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    #meta{
+        font-size: medium;
+        font-family: 'Verdana';
+    }
+    #helptext{
+        font-size: small;
+        width: 300px;
+        font-family:Tahoma, sans-serif;
+    }
+}
+     */

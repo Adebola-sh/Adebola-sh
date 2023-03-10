@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Coresea whitelist registration</title>
+</head>
+<body>
+    <div class="body">
+        <header>
+            <div class="header_div">
+                <div class="img_container">
+                    <img src="{% static 'images/CAYC.jpg' %}" alt="">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cayc">
+                <h2>Register for CAYC Whitelist mint</h2>
+            </div>
+            <form action="" method="post">
+                <div class="fieldwrap">
+                    <div class="formfields">
+                        {% for field in form %}
+
+                            <label for="form.auto_id" id="meta">{{field.label_tag}}</label>
+                            <p id="helptext">{{field.help_text}}</p>
+                            <p class="fields">{{field}}</p>
+                            
+                        {% endfor %}
+                        
+                        
+                    </div>
+                    {% csrf_token %}
+                    <div class="btn_div">
+                        <input type="submit" value="submit" id="submit_btn">
+                    </div>
+                </div>
+                
+                
+            </form>
+        </main>
+    </div>
+</body>
+</html>
