@@ -25,11 +25,21 @@
             <form action="" method="post">
                 <div class="fieldwrap">
                     <div class="formfields">
+                        
                         {% for field in form %}
+                            
+                            {% if field.name == 'follow' %}
 
-                            <label for="form.auto_id" id="meta">{{field.label_tag}}</label>
-                            <p id="helptext">{{field.help_text}}</p>
-                            <p class="fields">{{field}}</p>
+                                <a href="https://twitter.com/CoreSeaFi" target="_blank" id="meta">{{field.label}}</a>
+                                <p id="helptext">{{field.help_text}}</p>
+                                <p class="fields">{{field}}</p>
+                            {%  else %}
+                                <label for="form.auto_id" id="meta">{{field.label_tag}}</label>
+                                <p id="helptext">{{field.help_text}}</p>
+                                <p class="fields">{{field}}</p>
+                            
+                            {% endif %}
+                             
                             
                         {% endfor %}
                         
