@@ -10,14 +10,16 @@ class wl_form(forms.ModelForm):
         fields = '__all__'
         labels = {
                     'twitter': 'Twitter handle',
-                    'metamask': 'Metamask wallet address',
+                    'discord': 'Discord handle',
+                    'metamask': 'Submit wallet address',
                     'nft_address': 'NFT holding address',
-                    'follow': 'I follow @CoreSeaFi on twitter',
-                    'retweet' : 'I have retweet the Whitelist tweet',
+                    'follow': 'I follow CoreSea on twitter',
+                    'retweet' : 'I have retweeted',
 
                 }
         widgets = {
             'metamask': forms.TextInput(attrs={'class': 'field'}),
+            'discord': forms.TextInput(attrs={'class': 'field'}),
             'twitter': forms.TextInput(attrs={'class': 'field'}),
             'nft_address': forms.TextInput(attrs={'class': 'field'}),
             'follow': forms.CheckboxInput(attrs= {'class' : 'checks'}),
