@@ -1,12 +1,22 @@
+html{
+    width: 37rem;
+    margin: auto;
+   
+}
 body{
     background-color: #040d16;
     margin: auto;
-    width: 1000px;
-    padding-top: 30px;
+    width: 31.3rem;
+    padding-top: 0px;
+    
 
 }
+a{
+    color: rgb(90, 148, 255);
+    text-decoration: none;
+}
 
-#meta, .field{
+#meta, .field, p{
 
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,21 +28,22 @@ body{
     color: white;
     
     background-color: var(--darkshadow-color);
-    padding: 20px;
+    padding: 0px;
     margin: auto;
-    width: 430px;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     border: 2px white solid;
     border-radius: 15px;
-    flex: 1;
 }
 .fieldwrap{
     width: 120vh;
+    padding: 0.8rem;
 
 }
 .field{
-    height: 35px;
+    height: 2rem;
+    width: 21rem;
 }
 /* .formfields{
     position: relative;
@@ -45,12 +56,12 @@ body{
     font-family:Geneva, sans-serif;
     }
 .header_div{
-    width: 430px;
+    width: 25rem;
     margin: 0;
     padding: 0;
 }
 .img_container{
-    width: 420px;
+    width: 25rem;
     position: relative;
     margin: 0;
     padding: 0;
@@ -58,15 +69,20 @@ body{
 
 }
 img{
-    width: 470px;
+    width: 25rem;
     position: relative;
     /* margin: auto; */
-    margin-left: -20px;
-    margin-top: -20px;
+    /* margin-left: -20px; */
+    /* margin-top: -20px; */
     padding: 0;
     border-radius: 14px;
      
- }
+}
+
+.cayc{
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+}
 
 .btn_div{
     position: relative;
@@ -75,12 +91,12 @@ img{
 }
 .checks{
     width: 18px;
-    color: rgb(128, 87, 10);
+    background-color: rgb(90, 148, 255);
     border-color: #e6ecf0;
 }
 
 #submit_btn{
-    background-color: rgb(56, 42, 13);
+    background-color: rgb(90, 148, 255);
     position:relative;
     color: #e6ecf0;
     border-radius: 15px;
@@ -102,26 +118,151 @@ img{
     background-color: rgb(255, 255, 255);
 }
 
-/* @media screen and (max-width:450px){
+@media screen and (max-width:480px){
+    html{
+        width: 26rem;
+        height: 56.25rem;
+        
+    }
+    body{
+        width: 24.325rem;
+        margin: 0rem;
+        height: 56.25rem;
+    }    
+    .body{
+        width: 22.25rem;
+    }
+    .header_div{
+        width: 22.25rem;
+    }
+    .img_container{
+        width: 22.25rem;
+    }
    
     img{
-        height: 100px;
-        width: 400px;
+        width: 22.125rem;
+        margin-left: 0px;
     }
     .field{
-        height: 18px;
-        width: 150px;
+        height: 1.6rem;
+        width: 12rem;
+        font-size: 13.5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       
     }
     #meta{
-        font-size: medium;
+        font-size: 15.5px;
         font-family: 'Verdana';
     }
-    #helptext{
-        font-size: small;
-        width: 300px;
+    #helptext, p{
+        font-size: 10.8px;
+        width: 15.625rem;
         font-family:Tahoma, sans-serif;
     }
+    #submit_btn{
+        width: 6.25rem;
+        height: 1.375rem;
+    }
+
 }
-     */
+
+@media screen and (max-width:380px){
+  
+    html{
+        width: 19rem;
+        height: 56.25rem;
+        margin: 0.275rem;
+        
+    }
+    body{
+        width: 18.625rem;
+        margin: 0rem;
+        height: 56.25rem;
+    }    
+    .body{
+        width: 18.375rem;
+    }
+    .header_div{
+        width: 18.375rem;
+    }
+    .img_container{
+        width: 18.375rem;
+    }
+    
+    img{
+        width: 18.375rem;
+        margin-left: 0px;
+    }
+    .field{
+        height: 1.375rem;
+        width: 10.45rem;
+        font-size: 11.5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    #meta{
+        font-size: 14.5px;
+        font-family: 'Verdana';
+    }
+    #helptext, p{
+        font-size: 10.45px;
+        width: 13.625rem;
+        font-family:Tahoma, sans-serif;
+    }
+    #submit_btn{
+        width: 6.25rem;
+        height: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:335px){
+  
+    html{
+        width: 18.75rem;
+        height: 56.25rem;
+        margin: 0.275;
+        
+    }
+    body{
+        width: 18.25rem;
+        margin: 0rem;
+        height: 56.25rem;
+    }    
+    .body{
+        width: 15.85rem;
+    }
+    .header_div{
+        width: 15.85rem;
+    }
+    .img_container{
+        width: 15.85rem;
+    }
+    
+    img{
+        width: 15.85rem;
+        margin-left: 0px;
+    }
+    .field{
+        height: 1.3rem;
+        width: 10rem;
+        font-size: 11.5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    #meta{
+        font-size: 13.5px;
+        font-family: 'Verdana';
+    }
+    #helptext, p{
+        font-size: 10px;
+        width: 13.425rem;
+        font-family:Tahoma, sans-serif;
+    }
+    #submit_btn{
+        width: 6.25rem;
+        height: 1.375rem;
+    }
+
+}
